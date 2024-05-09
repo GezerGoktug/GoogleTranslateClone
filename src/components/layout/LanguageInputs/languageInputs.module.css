@@ -1,0 +1,13 @@
+.languageTextInputs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+@media (max-width: 590px) {
+  .languageTextInputs {
+    flex-direction: column;
+  }
+}

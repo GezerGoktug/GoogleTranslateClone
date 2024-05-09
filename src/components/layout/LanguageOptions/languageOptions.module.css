@@ -1,0 +1,12 @@
+.languageOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+@media (max-width: 450px) {
+  .languageOptions {
+    flex-direction: column;
+  }
+}

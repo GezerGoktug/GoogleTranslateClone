@@ -1,0 +1,54 @@
+@keyframes loadingAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+  width: calc(50% - 5px);
+  position: relative;
+}
+.translateLoading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 5px);
+  background-color: rgba(0, 0, 0, 0.516);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.translateLoadingİcon {
+  color: aliceblue;
+  font-size: 50px;
+  animation: loadingAnimate 1s linear infinite;
+}
+.textArea {
+  resize: none;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  height: 300px;
+  border-radius: 10px;
+  outline: none;
+  overflow-y: auto;
+  width: 100%;
+}
+.textArea:focus {
+  outline: 2px solid rgb(75, 75, 75);
+}
+.textArea:disabled {
+  background-color: rgb(199, 196, 196);
+}
+
+@media (max-width: 590px) {
+  .wrapper {
+    width: 100%;
+  }
+}
